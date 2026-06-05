@@ -41,7 +41,9 @@ from ufc_ablation_analysis import DATA_PATH, load_clean_fights
 
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="UFC Fight Plan", layout="wide", page_icon="🥋")
+
+
+st.set_page_config(page_title="UFC Fight Plan", layout="wide", page_icon="")
 
 
 # ---------------------------------------------------------------------------
