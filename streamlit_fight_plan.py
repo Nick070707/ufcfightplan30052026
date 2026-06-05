@@ -38,16 +38,7 @@ from plan_data import (
 from style_clustering import ARTIFACT_PATH as STYLE_ARTIFACT_PATH
 from ufc_ablation_analysis import DATA_PATH, load_clean_fights
 
-import sys
-import sklearn.ensemble._hist_gradient_boosting
 
-# Redirect the old internal module name to the current module layout
-try:
-    sys.modules['_loss'] = sklearn.ensemble._hist_gradient_boosting._loss
-except AttributeError:
-    # If scikit-learn structural shifts went further, link it to the modern equivalent
-    import sklearn._loss as modern_loss
-    sys.modules['_loss'] = modern_loss
 
 warnings.filterwarnings("ignore")
 
